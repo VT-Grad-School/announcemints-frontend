@@ -52,6 +52,19 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-<h2 id="title">Welcome to Ember</h2>
-<p>{{#link-to 'new'}}New Announcemint{{/link-to}}</p>
-{{outlet}}
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2 id="title">Welcome to AnnounceMints</h2>
+      <h4>We help bring our community together by sharing announcements, calls for participation, events, and job openings.</h4>      
+    </div>
+    <div class="col-md-12">
+      <p>{{#link-to 'new'}}Create a new AnnounceMint{{/link-to}}</p>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+      {{outlet}}
+  </div>
+</div>
