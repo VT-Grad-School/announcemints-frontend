@@ -1,26 +1,27 @@
-<form class="form-horizontal">
+<form class="form-horizontal" onsubmit={{action "submitAnnouncement"}}>
   <div class="form-group">
     <label for="announcement-title" class="col-sm-2 control-label">Title</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="announcement-title" placeholder="Title" required>
+      {{input type="text" class="form-control" id="announcement-title" placeholder="Title" value=newAnnouncement.title required=""}}
+      <!-- <input type="text" class="form-control" id="announcement-title" placeholder="Title" required> -->
     </div>
   </div>
   <div class="form-group">
     <label for="announcement-description" class="col-sm-2 control-label">Description</label>
     <div class="col-sm-10">
-      <textarea id="announcement-description" placeholder="Enter a description." class="form-control" rows="3" required></textarea>
+      {{textarea id="announcement-description" placeholder="Enter a description." class="form-control" rows="3" value=newAnnouncement.description required=""}}
     </div>
   </div>
   <div class="form-group">
     <label for="announcement-url" class="col-sm-2 control-label">Link</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="announcement-url" placeholder="Enter a link to more information if there is one.">
+      {{input type="text" class="form-control" id="announcement-url" placeholder="Enter a link to more information if there is one." value=newAnnouncement.url}}
     </div>
   </div>
   <div class="form-group">
     <label for="announcement-contact" class="col-sm-2 control-label">Contact</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="announcement-contact" placeholder="Is there any other relevant contact info?">
+      {{input type="text" class="form-control" id="announcement-contact" placeholder="Is there any other relevant contact info?" value=newAnnouncement.contact}}
     </div>
   </div>
   <div class="form-group">
