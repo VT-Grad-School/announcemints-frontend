@@ -12,6 +12,7 @@ Router.map(function() {
     this.route('event');
     this.route('job');
   });
+  this.route('home',{path:''});
 });
 
 export default Router;
