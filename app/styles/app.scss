@@ -1,5 +1,36 @@
+.am-announcements {  
+  border: 1px solid orange;
+  border-radius: 15px;
+}
+.am-events {
+  border: 1px solid green;
+  border-radius: 15px;
+}
+.am-calls {
+  border: 1px solid blue;
+  border-radius: 15px;
+}
+.am-jobs {
+  border: 1px solid purple;
+  border-radius: 15px;
+}
+.right-col {
+  position: fixed;
+}
+.border {
+  border: 1px solid black;
+  border-radius: 15px;
+}
+.row-header {
+  margin-top: 10px;
+  padding: 10px;
+}
+.pill {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 10px;  
+}
 .posting-type {
-  margin: 10px;
   display: inline-block;
 }
 

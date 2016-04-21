@@ -1,0 +1,16 @@
+{{#if announcementsList}}
+  {{#each announcementsList as |announcement|}}
+    <div class="panel panel-default">
+      <div class="panel-heading am-announcement-header">
+        <h3 class="panel-title">{{capitalize announcement.title}}</h3>
+      </div>
+      <div class="panel-body">
+        <p>{{announcement.description}}</p>
+        <p>{{announcement.contact}}</p>
+        <p><a href="{{announcement.url}}">{{announcement.url}}</a></p>
+      </div>
+    </div>
+  {{/each}}
+{{else}}
+  <span>Loading announcements...</span>
+{{/if}}

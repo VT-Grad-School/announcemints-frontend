@@ -1,0 +1,13 @@
+<div class="panel panel-default">
+  <div class="panel-heading am-event-header">
+    <h3 class="panel-title">{{capitalize event.title}}</h3>
+  </div>
+  <div class="panel-body">
+    <p>Date: {{event.end_date}} at Time: {{event.end_time}}</p>
+    <p>{{event.recurring}}</p>
+    <p>{{event.location}}</p>
+    <p>{{event.description}}</p>
+    <p>{{event.contact}}</p>
+    <p><a href="{{event.url}}">{{event.url}}</a></p>
+  </div>
+</div>
